@@ -11,6 +11,7 @@ from numpy import savetxt
 import os
 import csv
 
+#Load the data file
 raw_df= pd.read_csv(file_name)
 print(raw_df)
 

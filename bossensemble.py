@@ -43,7 +43,6 @@ def main():
 				continue
 			else:
 				class_names = np.append(class_names, lines[0])		
->>>>>>> Stashed changes
 
 	X, y = fnirs_df, class_names
 	X_train, X_test, y_train, y_test = train_test_split(X, y)

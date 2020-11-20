@@ -1,0 +1,13 @@
+{
+ "filePath":"207_AXCPT19_AS_axwr_mwt.csv",
+ "targetCol": "event",
+ "percentTrain":0.5,
+ "jobs": [
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1
+                       }]
+    }
+ ]
+}

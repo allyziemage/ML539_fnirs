@@ -131,8 +131,29 @@ def columnEnsembleMethod(classifier_list,X,y,percent_train,clf_parameters=[]):
         name = i['classifier']+str(num)
         estimator_list.append((name,built_clf,[num]))
     clf = ColumnEnsembleClassifier(estimators=estimator_list)
+    start_time=time.time()
     clf.fit(Xtrain, ytrain)
+    end_time= time.time() - start_time
+    print('Total Time : '+str(round(end_time,2))+' seconds\n\n')
     return clf.score(Xtest, ytest)
+
+def concatenateMethod(classifier, X, y, percent_train,clf_parameters=[]):
+    print("classification...")
+    concatenation_instance=ColumnConcatenator()
+    # print(X)
+    X_concatenated=concatenation_instance.fit(X).transform(X)
+    clf= classifierBuilder(classifier,clf_parameters)
+    cv = KFold(5)
+    res_list = []
+    for k, (train, test) in enumerate(cv.split(X_concatenated, y)):
+        start_time=time.time()
+        clf.fit(X_concatenated.iloc[train], y[train])
+        end_time= time.time() - start_time
+        print('Total Time : '+str(round(end_time,2))+' seconds\n\n')
+        res = clf.score(X_concatenated.iloc[test], y[test])
+        res_list.append(res)
+    print(res_list)
+    return mean(res_list)
 
 '''check if the headers of the files are correct yet'''
 def check_headers(csv_filepath):
@@ -196,7 +217,6 @@ def main():
         acc= 0
         print("JOB:")
         print(job)
-        start_time=time.time()
         params=[]
         if ('parameters' in job):
             params=job['parameters']
@@ -205,7 +225,5 @@ def main():
         else:
             raise ValueError(str(job['method']) +" classification method does not exist")
         print("Accuracy : "+str(round(acc*100,2))+'%\n')
-        end_time= time.time() - start_time
-        print('Total Time : '+str(round(end_time,2))+' seconds\n\n')
 
 main()

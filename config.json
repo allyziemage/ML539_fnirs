@@ -1,13 +1,50 @@
 {
- "filePath":"207_AXCPT19_AS_axwr_mwt.csv",
+ "filePath":"211_AXCPT19_TK_axcaxwr_hb_cs539.csv",
  "targetCol": "event",
- "percentTrain":0.5,
+ "percentTrain":0.8,
  "jobs": [
     {"method": "COLUMN_ENSEMBLE",
      "ensembleInfo":[{
                         "classifier": "BOSSE_CLF",
+                        "columnNum":13
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":19
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":14
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":17
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":10
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":18
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":7
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":0
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":2
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
                         "columnNum":1
-                       }]
+                       }
+                   ]
     }
  ]
 }

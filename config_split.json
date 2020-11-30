@@ -1,0 +1,34 @@
+{
+ "filePath":"eeg_train_uci2.csv",
+ "testPath":"eeg_test_uci2.csv",
+ "targetCol": "event",
+ "jobs": [
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":46
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":54
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":33
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":22
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":9
+                       }
+                   ]
+    }
+ ]
+}

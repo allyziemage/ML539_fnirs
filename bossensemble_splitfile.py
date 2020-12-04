@@ -194,7 +194,7 @@ def main():
     print('Testing set: ', test_name)
 
     Xte, yte, events_count =reformatData(target,test_name)
-    Xtr, ytr, events_count =reformatData(target,file_name)
+    Xtr, ytr, events_count =reformatData(target,file_name) #it's okay that events_count gets overwritten here, it only matters for the training set.
     print("finished formatting")
     for job in data['jobs']:
         acc= 0

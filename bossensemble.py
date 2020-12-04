@@ -31,6 +31,8 @@ classifier={
     'BOSSE_CLF' : 0,
 }
 
+BOSSE_default_parameters={'min_window':10,'threshold':0.92}
+
 # converts a list to a dictionary
 #ex: input ["john",1,"kate",3]-> {"john":1, "kate":3}
 def list_to_dict(a):
@@ -108,7 +110,10 @@ def reformatData(target, file_name):
 def classifierBuilder(clf_name,params):
     clf_params_dict=list_to_dict(params)
     if(clf_name == 'BOSSE_CLF'):
-        clf = BOSSEnsemble()
+        BOSSE_params=BOSSE_default_parameters
+        for e in clf_params_dict:
+            BOSSE_params[e]=clf_params_dict[e]
+        clf = BOSSEnsemble(min_window=BOSSE_params['min_window'], threshold=BOSSE_params['threshold'])
     else:
         raise ValueError("Specified classifier is not an option")
     return clf
@@ -137,23 +142,6 @@ def columnEnsembleMethod(classifier_list,X,y,percent_train,clf_parameters=[]):
     print('Total Time : '+str(round(end_time,2))+' seconds\n\n')
     return clf.score(Xtest, ytest)
 
-def concatenateMethod(classifier, X, y, percent_train,clf_parameters=[]):
-    print("classification...")
-    concatenation_instance=ColumnConcatenator()
-    # print(X)
-    X_concatenated=concatenation_instance.fit(X).transform(X)
-    clf= classifierBuilder(classifier,clf_parameters)
-    cv = KFold(5)
-    res_list = []
-    for k, (train, test) in enumerate(cv.split(X_concatenated, y)):
-        start_time=time.time()
-        clf.fit(X_concatenated.iloc[train], y[train])
-        end_time= time.time() - start_time
-        print('Total Time : '+str(round(end_time,2))+' seconds\n\n')
-        res = clf.score(X_concatenated.iloc[test], y[test])
-        res_list.append(res)
-    print(res_list)
-    return mean(res_list)
 
 '''check if the headers of the files are correct yet'''
 def check_headers(csv_filepath):

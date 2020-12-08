@@ -51,7 +51,7 @@
                        },
                        {
                         "classifier": "BOSSE_CLF",
-                        "columnNum":1,
+                        "columnNum":13,
                         "parameters":["min_window",20,"threshold",0.8]
                        }
                    ]

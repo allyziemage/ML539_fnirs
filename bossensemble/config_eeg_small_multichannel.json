@@ -1,0 +1,60 @@
+{
+ "filePath":"eeg_small_uci.csv",
+ "targetCol": "event",
+ "percentTrain":0.8,
+ "jobs": [
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":8,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":16,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":21,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":28,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":32,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":39,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":43,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":45,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":53,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":59,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       }
+                   ]
+    }
+ ]
+}

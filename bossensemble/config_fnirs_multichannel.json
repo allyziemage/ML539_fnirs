@@ -1,0 +1,60 @@
+{
+ "filePath":"211_AXCPT19_TK_axcaxwr_hb_cs539.csv",
+ "targetCol": "event",
+ "percentTrain":0.5,
+ "jobs": [
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":19,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":14,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":17,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":10,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":18,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":7,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":0,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":2,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       },
+                       {
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",20,"threshold",0.8]
+                       }
+                   ]
+    }
+ ]
+}

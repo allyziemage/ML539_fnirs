@@ -1,0 +1,255 @@
+{
+ "filePath":"eeg_small_uci.csv",
+ "targetCol": "event",
+ "percentTrain":0.5,
+ "jobs": [
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",12,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",14,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",18,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",20,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",22,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",24,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",26,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",28,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",30,"threshold",0.92]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.90]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.88]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.86]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.84]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.82]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.80]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.78]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.76]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",10,"threshold",0.74]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",15,"threshold",0.85]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",15,"threshold",0.80]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",15,"threshold",0.75]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",20,"threshold",0.85]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",20,"threshold",0.80]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",20,"threshold",0.75]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",25,"threshold",0.85]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",25,"threshold",0.80]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",25,"threshold",0.75]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",30,"threshold",0.85]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",30,"threshold",0.80]
+                       }
+                   ]
+    },
+    {"method": "COLUMN_ENSEMBLE",
+     "ensembleInfo":[{
+                        "classifier": "BOSSE_CLF",
+                        "columnNum":1,
+                        "parameters":["min_window",30,"threshold",0.75]
+                       }
+                   ]
+    }
+ ]
+}

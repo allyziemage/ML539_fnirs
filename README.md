@@ -50,7 +50,29 @@ Similar to the **config_eeg_small_multichannel.json** file, this takes the same 
 
 This is the only provided configuration file that can be ran on **bossensemble_splitfile.py**. It contains variables for training file path (filePath), testing file path (testPath), the class name, and jobs. It does not contain a training percentage because the training and testing sets are predefined. Currently, it takes in the sktime default parameters and only one channel out of the sixty-four available channels. We caution adding more channels, because this will significantly increase the run time of the classifier by the magnitude of hours. 
 
+> 211_AXCPT19_TK_axcaxwr_hb_cs539.csv
+
+This is one of the available csvs to run with **bossensemble.py**. It contains the fNIRS dataset from WPI. More details about the data structure can be viewed on our Google Sites website. 
+
+> eeg_small_uci.csv
+
+This is the other csv that can be ran with **bossensemble.py**. It contains the small UCI EEG dataset from UCI Archive. More details about the data structure can be viewed on our Google Sites website. 
+
+> eeg_test_uci.csv
+> eeg_train_uci.csv
+
+These two datasets must be used together with **bossensemble_splitfile.py**. As their file names denote, one contains a predefined testing set and the other contains the predefined training set, as detailed on UCI Archive. More details about the data structure can be viewed on our Google Sites website. 
+
 #### How to run
+To run either script, navigate to the bossensemble directory within the root directory in a terminal window, such as PowerShell. This can be done with:
+
+>cd userpath/ML539_fnirs/bossensemble
+
+Next, choose a script (either **bossensemble.py** or **bossensemble_splitfile.py**) and a correlating configuration file. If you are unsure which configuration file works for each script, please view the file notes above. Next, run the chosen script and configuration file in the command line, with specific ordering of script first, then configuration file. Below is an example that would be acceptable in PowerShell:
+
+>python bossensemble.py config_fnirs.json
+
+There will be a variety of outputs in the terminal window to update the user as the script runs. These include specifying what file was inputted and it's related variables, when the data has finished reformatting, and the results from the model. Time results will be given in seconds (s). 
 
 ### K Nearest Neighbors (KNN)
 instructions to run KNN

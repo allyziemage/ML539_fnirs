@@ -17,7 +17,13 @@ instructions to run TSF
 The code is in the form of a notebook and has different cells for the three experiments, given by their titles. In order to run a particular case, just uncomment the particular cell and comment the other cells.
 
 ### Bag of SFA Symbols Ensemble (BOSSE)
-instructions to run BOSSE
+BOSSE is ran in through the terminal command line. This will cover how to do so with Windows OS, but should easily transfer to another OS. 
+
+Navigate to the bossensemble directory from the root directory. Contained here are eleven files: two python scripts, four csv files, and five jason files. Below are detailed summaries of what each file contains, but in general, the python scripts with be called in the command line and contains the algorithm for processing the data, the jason files will be called in the command line and contain the parameters, dataset names, and other details necessary to fit the models, and the csv files will be called through the jason files. 
+
+> bossensemble.py
+
+This python script is the base of the boss ensemble classifier. It contains functions to read the jason and csv files, to reformat the csv in to a pandas dataframe, to call column ensemble, and to call boss ensemble from column ensemble. It can only take one csv file and thus will only work with the following jason files: **config_eeg_small.json**, **config_eeg_small_multichannel.json**, **config_fnirs.json**, **config_fnirs_multichannel.json**. 
 
 ### K Nearest Neighbors (KNN)
 instructions to run KNN

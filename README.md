@@ -78,4 +78,7 @@ There will be a variety of outputs in the terminal window to update the user as 
 instructions to run KNN
 
 ### Proximity Forest (PF)
-instructions to...run? PF :D
+There are two seperate notebooks for ProximityForest. **ML_FP_ProximityForestPlayground.ipynb** imports the **eeg_test_uci.csv** and **eeg_train_uci.csv** datasets and **ML_FP_ProximityForestPlayground_fNIRS.ipynb** imports **211_AXCPT19_TK_axcaxwr_hb_cs539.csv**. The difference in features and feature names in the datasets as well as the pre-seperated training and test sets for the eeg data and the need to split the data into training and test sets for the fNIRS dataset are accounted for in the individual notebooks.
+The notebooks included were run in the Google Colab environment, so the current filepath points at files on the Drive for the corresponding account. To run either notebook, confirm the path to the corresponding * *.csv* is correct as it is stored on your system.
+Varying the `n_estimators` and `max_depth` parameters when instantiating the class will allow reproduction of the conditions under which the **211_AXCPT19_TK_axcaxwr_hb_cs539.csv** dataset was used to train and test a variety of Proximity Forest models.
+There are known issues installing sktime on Mac that specifically affect the ability to model using Proximity Forest. Alternative installation instructions are included in the sktime documentation, but they were not found to work across all systems.

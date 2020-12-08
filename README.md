@@ -3,7 +3,7 @@
 ## Developed by Team 3 - Jocelyn Petitto, Shima Azizi, Kathleen Cachel, Amisha Jindal, and Alicia Howell
 
 ### Environment requirements
-To run each algorithm's script, you must have the following packages: sklearn, sktime, statistics, numpy, pandas, time, sys, json, datetime, os, csv
+To run each algorithm's script, you must have the following packages: sklearn, sktime, statistics, numpy, pandas, time, sys, json, datetime, os, csv.
 
 ### General notes
 Each algorithm was implemented in its own script, so there are differences in the methods to run each algorithm. Please be sure to read the algorithm's section in the README.md to understand how to use it.
@@ -14,7 +14,7 @@ There are four data files, but only three datasets. **eeg_small_uci.csv** is the
 instructions to run TSF
 
 ### MrSEQL
-instructions to run MrSEQL
+The code is in the form of a notebook and has different cells for the three experiments, given by their titles. In order to run a particular case, just uncomment the particular cell and comment the other cells.
 
 ### Bag of SFA Symbols Ensemble (BOSSE)
 instructions to run BOSSE

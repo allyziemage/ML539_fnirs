@@ -11,7 +11,7 @@ Each algorithm was implemented in its own script, so there are differences in th
 There are four data files, but only three datasets. **eeg_small_uci.csv** is the small UCI EEG dataset and is used individually. **211_AXCPT19_TK_axcaxwr_hb_cs539.csv** is the WPI fNIRS dataset and is used individually. **eeg_test_uci.csv** and **eeg_train_uci.csv** belong to the large UCI EEG dataset and are run together. **eeg_test_uci.csv** is the designated testing data from the original researchers who collected the data, and **eeg_train_uci.csv** is the designated training data. They contain approximately equal amounts of data. 
 
 ### Time Series Forest Classifier (TSF)
-instructions to run TSF
+There are three different .py file in the TSF folder including **TimeSeriesForest_fNIRS.py**, **TimeSeriesForest_EEG_Small.py**, and **TimeSeriesForest_EEG_Large.py** running the TSF algorithm on fNIRS dataset, EEG small dataset, and EEG large dataset, respectively. We evaluate the accuracy and efficency for varying number of estimators (number of trees) and plot the results.
 
 ### MrSEQL
 The code is in the form of a notebook and has different cells for the three experiments, given by their titles. In order to run a particular case, just uncomment the particular cell and comment the other cells.
